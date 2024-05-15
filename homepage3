@@ -1,0 +1,299 @@
+<html>
+    <head>
+        
+        <style>
+            body{
+                text-align: center;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 100;
+                background: url('https://c4.wallpaperflare.com/wallpaper/535/513/234/night-sky-good-night-moon-night-wallpaper-preview.jpg') center center;
+                background-size: cover;
+                background-color: black;
+            }
+            div.logo {
+            display: flex;
+            ;
+            justify-content: center;
+            margin: 0 23px;
+            vertical-align: top;
+            display: inline-block;}
+            nav {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            padding: 25px;
+            height: 15px;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+            padding: 0px 25px 0px 40px;
+            color: white;
+            font-size: 20px;    
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+            h1{ 
+            font-weight: 200; 
+            font-size: 50px; 
+            margin: 40px 0px 20px; 
+           color: white;
+            text-shadow: 2px 2px 4px yellow;
+            }
+
+
+            
+
+            .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.image {
+  border: 3px solid cadetblue;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+
+}
+
+.gallery .image {
+  width: 22%;
+  padding: 7px;
+  display: inline-block;
+  margin: 7px;
+}
+
+.gallery .image span {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery .image img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.gallery .image:hover img {
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #f1f1f1;
+  font-size: 25px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+ 
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+#selectedImage {
+          margin-top: 20px;
+          width: 300px;
+          height: 200px;
+          background-size: cover;
+          background-position: center;
+          border: 1px solid #000;
+        }
+
+    </style>
+
+        </style>
+            </head>
+            <body>
+                <header height: 70px;width:100%;">  
+                <div class="my"><h1><u><b>COUNTDOWN TIMER</b></u></h1></div></header><hr>
+                <nav>
+                    <div class="logo"><img class="logo" src='C:\Users\NIC\Desktop\clockimage.png' width="60" height="50"></div>
+                    <ul>
+                       
+                        <li>
+                            <form>
+                                <select name="dropdown">
+                                <option value="NEWS" selected>News</option>    
+                                <option value="time zone news">Time zone news</option>
+                                <option value="calendar and holiday news">Calendar and holiday news</option>
+                                <option value="newsletter">Newsletter</option>
+                                </select></form>
+                                
+                        </li>
+                        <li>
+                            <form>
+                                <select name="dropdown">
+                                <option value="calendar" selected>Calendar</option>
+                                <option value="calendar 2015">Calendar 2015</option>
+                                <option value="calendar 2016">Calendar 2016</option>
+                                <option value="calendar 2017">Calendar 2017</option>
+                                <option value="calendar 2018">Calendar 2018</option>
+                                <option value="calendar 2019">Calendar 2019</option>
+                                <option value="calendar 2020">Calendar 2020</option>    
+                                <option value="calendar 2021">Calendar 2021</option>
+                                <option value="calendar 2022">Calendar 2022</option>
+                                <option value="calendar 2023">Calender 2023</option>
+                                <option value="calendar 2024">Calendar 2024</option>
+                                <option value="calendar 2025">Calendar 2025</option>
+                                <option value="OTHER....">Other...</option>
+                                </select></form>
+                        </li>
+                                <li>About us</li>
+                               
+                                <div class="dropdown">
+                                    <button class="dropbtn">Timer</button>
+                                    <div class="dropdown-content">
+                                      <a href="stopwatch.html">stopwatch</a>
+                                     
+                                    </div>
+                                  </div>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                                  <div class="dropdown">
+                                    <button class="dropbtn">My account</button>
+                                    <div class="dropdown-content">
+                                      <a href="loginpage.html">Acount</a>
+                                      <a href="#">Log Out</a>
+                                     
+                                    </div>
+                                  </div>
+                        
+                        
+                                  
+                </nav><hr>
+                <h1 style="text-align: left; font-size: 40px;"><u>Live Countdown Timer With wallpaper.</u></h1>
+                <div class="gallery">
+                  <div class="image" data-name="watches"><span><img src="C:\Users\NIC\Desktop\birthday gif.gif"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\marry gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\baby shower.gif" height="170px"></span></div>
+                  <div class="image" data-name="shoes"><span><img src="C:\Users\NIC\Desktop\party gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\vacation gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\weekend gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="shoes"><span><img src="C:\Users\NIC\Desktop\retirement gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\cricket gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\indpak gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\happy gif.gif" height="170px"></span></div>
+      
+
+                  <div class="image" data-name="watches"><span><img src="C:\Users\NIC\Desktop\diwali gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\holi gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\chrismas gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="shoes"><span><img src="C:\Users\NIC\Desktop\good friday gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\lodhi gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\launch gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="shoes"><span><img src="C:\Users\NIC\Desktop\election gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\valatine gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="phones"><span><img src="C:\Users\NIC\Desktop\sale gif.gif" height="170px"></span></div>
+                  <div class="image" data-name="clothes"><span><img src="C:\Users\NIC\Desktop\project gif.gif" height="170px"></span></div>
+                </div>
+                <hr>
+                <hr>
+                  <h1 style="text-align: left;">Create countdown timer</h1>
+
+
+            <form action="result.html" method="GET" onsubmit="setCountdown()">
+      <label for="days">Days:</label>
+      <input type="number" id="days" name="days" required>
+
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" name="hours" required>
+
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" name="minutes" required>
+
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" name="seconds" required>
+      <br>
+      <br>
+
+      <button type="submit">Start Countdown</button>
+    </form>
+  </div>
+  <script>
+  function setCountdown() {
+    const days = document.getElementById('days').value;
+    const hours = document.getElementById('hours').value;
+    const minutes = document.getElementById('minutes').value;
+    const seconds = document.getElementById('seconds').value;
+  
+    const totalSeconds = (parseInt(days) * 24 * 60 * 60) + (parseInt(hours) * 60 * 60) + (parseInt(minutes) * 60) + parseInt(seconds);
+  
+    localStorage.setItem('countdown', totalSeconds);
+  }
+  </script>
+
+                <footer  100%; text-align: center;>
+                        <h3 style="color:white">follow us</h3>
+                        <a href="https://www.facebook.com/"><img src="C:\Users\NIC\Desktop\facebooklogo.png" height="20px" 
+                         width="20px">
+                         <a href="https://www.linkedin.com/"><img src="C:\Users\NIC\Desktop\linkedlogo.png" height="20px" 
+                            width="20px">
+                            <a href="https://www.instagram.com/"><img src="C:\Users\NIC\Desktop\instagramlogo.jpg" height="20px" 
+                                width="20px">
+                                <a href="https://www.twitter.com/"><img src="C:\Users\NIC\Desktop\twitterlogo.png" height="20px" 
+                                    width="20px">
+                                    <a href="https://www.youtube.com/"><img src="C:\Users\NIC\Desktop\youtubelogo.png" height="20px" 
+                                        width="20px">
+                       </footer>
+                             
+                </body>
+                </html> 
+                      
