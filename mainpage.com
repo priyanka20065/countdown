@@ -13,7 +13,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background:url(clock12.jpg);
     background-size: cover;
     background-position: center;
