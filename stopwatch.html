@@ -1,0 +1,209 @@
+<html>
+    <head>
+        
+        <style>
+            body{
+                text-align: center;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 100;
+                background: url('https://c4.wallpaperflare.com/wallpaper/535/513/234/night-sky-good-night-moon-night-wallpaper-preview.jpg') center center;
+                background-size: cover;
+                background-color: black;
+            }
+            div.logo {
+            display: flex;
+            ;
+            justify-content: center;
+            margin: 0 23px;
+            vertical-align: top;
+            display: inline-block;}
+            nav {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            padding: 25px;
+            height: 15px;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+            padding: 0px 25px 0px 40px;
+            color: white;
+            font-size: 20px;    
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+            h1{ 
+            font-weight: 200; 
+            font-size: 50px; 
+            margin: 40px 0px 20px; 
+           color: white;
+            text-shadow: 2px 2px 4px yellow;
+            }
+
+            .stopwatch {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    height:300px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+        </style>
+            </head>
+            <body>
+                <header height: 70px;width:100%;>  
+                <div class="my"><h1><u><b>COUNTDOWN TIMER</b></u></h1></div></header><hr>
+                <nav>
+                    <div class="logo"><img class="logo" src='C:\Users\NIC\Desktop\clockimage.png' width="60" height="50"></div>
+                    <ul>
+                        <Li><a href="Untitled-1.html" target="_blank" style="color: white;">Home</a></Li>
+                        <li>
+                            <a href="pythonwithhtml.html" target="_blank" style="color:white;"><u>Calender</u></a>
+                        </li>
+                        <Li><a href="aboutus.html" target="_blank" style="color: white;">About us</a></Li>
+                               
+                            <li>   <div class="dropdown">
+                                    <button class="dropbtn">Timer</button>
+                                    <div class="dropdown-content">
+                                      <a href="stopwatch.html">stopwatch</a>
+                                     
+                                    </div>
+                                  </div>
+                                  </li>
+                                  <li>
+                                    <a href="review.html" target="_blank" style="color:antiquewhite"><u>Review page</u></a>
+                                    </li>
+                                      <li>
+                                  <div class="dropdown">
+                                    <button class="dropbtn">My account</button>
+                                    <div class="dropdown-content">
+                                      <a href="loginpage.html">Account</a>
+                                      <a href="signup.html">Log Out</a>
+                                     
+                                    </div>
+                                  </div>
+                                  </li>
+                                  </ul>
+                        
+                        
+                                  
+                </nav><br><hr>
+
+
+                <div class="stopwatch">
+                    <div id="display">00 minutes:00 Seconds:00 milliseconds</div>
+                    <button id="startStop" onclick="startStop()">Start</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>
+                <script>       
+                
+                    let isRunning = false;
+    let startTime = 0;
+    let intervalId = null;
+    
+    function startStop() {
+        if (isRunning) {
+            clearInterval(intervalId);
+            document.getElementById('startStop').textContent = 'Start';
+        } else {
+            startTime = new Date().getTime() - (startTime > 0 ? startTime : 0);
+            intervalId = setInterval(updateDisplay, 10);
+            document.getElementById('startStop').textContent = 'Stop';
+        }
+        isRunning = !isRunning;
+    }
+    
+    function reset() {
+        clearInterval(intervalId);
+        document.getElementById('display').textContent = '00 minutes:00 seconds:00 milliseconds';
+        document.getElementById('startStop').textContent = 'Start';
+        isRunning = false;
+        startTime = 0;
+    }
+    
+    function updateDisplay() {
+        const currentTime = new Date().getTime() - startTime;
+        const minutes = Math.floor((currentTime / 60000) % 60);
+        const seconds = Math.floor((currentTime / 1000) % 60);
+        const milliseconds = Math.floor(currentTime % 1000);
+    
+        const display = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(3, '0')}`;
+        document.getElementById('display').textContent = display;
+    }
+                    
+                    
+                    </script>
+
+                <footer  100%; text-align: center;">
+                        <h3>follow us</h3>
+                        <a href="https://www.facebook.com/"><img src="C:\Users\NIC\Desktop\facebooklogo.png" height="20px" 
+                         width="20px">
+                         <a href="https://www.linkedin.com/"><img src="C:\Users\NIC\Desktop\linkedlogo.png" height="20px" 
+                            width="20px">
+                            <a href="https://www.instagram.com/"><img src="C:\Users\NIC\Desktop\instagramlogo.jpg" height="20px" 
+                                width="20px">
+                                <a href="https://www.twitter.com/"><img src="C:\Users\NIC\Desktop\twitterlogo.png" height="20px" 
+                                    width="20px">
+                                    <a href="https://www.youtube.com/"><img src="C:\Users\NIC\Desktop\youtubelogo.png" height="20px" 
+                                        width="20px">
+                       </footer>
+                             
+                </body>
+                </html> 
+    
