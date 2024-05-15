@@ -123,7 +123,7 @@ body{
             </div>
             <button type="submit" class="btn"><a href="Untitled-1.html">Login</a></button>
             <div class="signup-link">
-                <p>Dont't have an account? so make a page <a href="signup.html">
+                <p>Dont't have an account? so make a <a href="signup.html">
                         Signin
                     </a></p>
             </div>
