@@ -38,7 +38,7 @@ p {
 <body>
   <div class="glow-border">
     <h1>Glowing Border</h1>
-    <p>This is a sample text with a glowing border.</p>
+    <p>This is a sample text with a glowing border and pageborder.</p>
   </div>
 </body>
 </html>
