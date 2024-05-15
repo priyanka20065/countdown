@@ -1,0 +1,102 @@
+<html>
+<head>
+    <style>
+        .gif-box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.gif-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Initially hide the GIF */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+    </style>
+</head>
+<body>
+<div class="gif-box" onclick="setEventAndTimer()">
+    <img src="C:\Users\NIC\Desktop\birthday gif.gif" alt="GIF placeholder" id="gifPlaceholder">
+    <img src="C:\Users\NIC\Desktop\vacation gif.gif" alt="GIF placeholder" id="gifPlaceholder">
+    <script>function displayGIF() {
+        const gifElement = document.getElementById("gifPlaceholder");
+        gifElement.src = `path/to/${selectedEvent}.gif`; // Replace with selected GIF
+      
+        // Set timer to display the GIF after the specified duration
+        setTimeout(() => {
+          gifElement.style.display = "block";
+        }, timerDuration);
+      
+        // Add hover effect
+        gifElement.addEventListener("mouseover", () => {
+          // Your hover functionality here
+          // For example, change opacity or scale
+          gifElement.style.opacity = "0.8";
+        });
+      
+        gifElement.addEventListener("mouseout", () => {
+          // Revert back to normal on mouseout
+          gifElement.style.opacity = "1";
+        });
+      }
+      </script>
+      <script>let selectedEvent = ""; // Variable to store selected event
+        let timerDuration = 0; // Variable to store timer duration
+        
+        function setEventAndTimer() {
+          // Set the selected event (You can use a dropdown, modal, or any method to select the event)
+          selectedEvent = "selectedEvent"; // Replace with selected event
+        
+          // Set the timer duration (You can use input fields for user input)
+          timerDuration = 5000; // Replace with user input or default value
+        }
+        let selectedEvent = ""; // Variable to store selected event
+let timerDuration = 0; // Variable to store timer duration
+
+function setEventAndTimer() {
+  // Set the selected event (You can use a dropdown, modal, or any method to select the event)
+  selectedEvent = "selectedEvent"; // Replace with selected event
+
+  // Set the timer duration (You can use input fields for user input)
+  timerDuration = 5000; // Replace with user input or default value
+}
+let selectedEvent = ""; // Variable to store selected event
+let timerDuration = 0; // Variable to store timer duration
+
+function setEventAndTimer() {
+  // Set the selected event (You can use a dropdown, modal, or any method to select the event)
+  selectedEvent = "selectedEvent"; // Replace with selected event
+
+  // Set the timer duration (You can use input fields for user input)
+  timerDuration = 5000; // Replace with user input or default value
+}
+let selectedEvent = ""; // Variable to store selected event
+let timerDuration = 0; // Variable to store timer duration
+
+function setEventAndTimer() {
+  // Set the selected event (You can use a dropdown, modal, or any method to select the event)
+  selectedEvent = "selectedEvent"; // Replace with selected event
+
+  // Set the timer duration (You can use input fields for user input)
+  timerDuration = 5000; // Replace with user input or default value
+}
+let selectedEvent = ""; // Variable to store selected event
+let timerDuration = 0; // Variable to store timer duration
+
+function setEventAndTimer() {
+  // Set the selected event (You can use a dropdown, modal, or any method to select the event)
+  selectedEvent = "selectedEvent"; // Replace with selected event
+
+  // Set the timer duration (You can use input fields for user input)
+  timerDuration = 5000; // Replace with user input or default value
+}
+</script>
+  </div>
+  </body>
+  </html>
+  
