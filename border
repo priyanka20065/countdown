@@ -13,7 +13,7 @@
 }
 
 .glow-border {
-  padding: 20px;
+
   text-align: center;
   border: 2px solid transparent; /* Set a transparent border */
   border-radius: 10px;
